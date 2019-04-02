@@ -34,7 +34,7 @@ class Scraper
         attributes_hash[:twitter] = social.attr("href")
       elsif social.attr("href").include?("linkedin")
         attributes_hash[:linkedin] = social.attr("href")
-      elsif social.attr("href").include?(github)
+      elsif social.attr("href").include?("github")
         attributes_hash[":github"] = social.attr("href")
       end
     end
