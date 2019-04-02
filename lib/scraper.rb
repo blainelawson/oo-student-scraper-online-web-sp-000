@@ -17,7 +17,7 @@ class Scraper
                            url: student_card.css("a").attr("href").value # student url
                     }
       student_hash_array << student_hash
-                    binding.pry
+                    # binding.pry
     end
   end
 
