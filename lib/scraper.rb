@@ -14,8 +14,8 @@ class Scraper
       student_hash = {
                           name: student_card.css("h4").text, #name
                       location: student_card.css("p").text, #location
-                           profile_url: student_card.css("a").attr("href").value # student url
-                    }
+                   profile_url: student_card.css("a").attr("href").value # student url
+                  }
       student_hash_array << student_hash
                     # binding.pry
     end
