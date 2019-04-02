@@ -38,7 +38,7 @@ class Scraper
         attributes_hash["github"] = social.attr("href")
       end
     end
-        
+
     end
   end
 
