@@ -10,10 +10,12 @@ class Scraper
     doc = Nokogiri::HTML(html)
     # binding.pry
     doc.css(".student-card").each do |student_card|
-      binding.pry
-      student_card.css("a").attr("href").value # student url
-      student_card.css("p").text #location
-      student_card.css("h4").text #name
+      student_hash = {
+                          name: student_card.css("h4").text #name
+                      location: student_card.css("p").text #location
+                           url: student_card.css("a").attr("href").value # student url                    
+                    }
+                    binding.pry
     end
   end
 
