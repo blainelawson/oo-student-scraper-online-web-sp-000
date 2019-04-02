@@ -17,7 +17,7 @@ class Student
     # binding.pry
     attributes_hash.each do |k, v|
       binding.pry
-      self.send(("#{k}"), v)
+      self.send(("#{k}="), v)
     end
   end
 
