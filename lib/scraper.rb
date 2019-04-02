@@ -38,7 +38,7 @@ class Scraper
         attributes_hash["github"] = social.attr("href")
       end
     end
-
+binding.pry
   end # self.scrape_profile_page
 
 end
