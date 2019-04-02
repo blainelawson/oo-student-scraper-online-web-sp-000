@@ -30,6 +30,15 @@ class Scraper
 # binding.pry
     doc.css(".social-icon-container a").each do |social|
       binding.pry
+      if social.attr("href").include?("twitter")
+        attributes_hash[:twitter] = social.attr("href")
+      elsif social.attr("href").include?("linkedin")
+        attributes_hash[:linkedin] = social.attr("href")
+      elsif social.attr("href").include?(github)
+        attributes_hash["github"] = social.attr("href")
+      end
+    end
+        
     end
   end
 
