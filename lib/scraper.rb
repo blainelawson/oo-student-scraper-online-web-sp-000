@@ -39,7 +39,6 @@ class Scraper
       end
     end
 
-    end
-  end
+  end # self.scrape_profile_page
 
 end
