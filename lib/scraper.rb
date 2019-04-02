@@ -44,6 +44,8 @@ class Scraper
   attributes_hash[:profile_quote] = doc.css(".profile-quote").text
   attributes_hash[:bio] = doc.css(".bio-content p").text
   # binding.pry
+
+  attributes_hash
   end # self.scrape_profile_page
 
 end
