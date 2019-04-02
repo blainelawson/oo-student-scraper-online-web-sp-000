@@ -36,6 +36,8 @@ class Scraper
         attributes_hash[:linkedin] = social.attr("href")
       elsif social.attr("href").include?("github")
         attributes_hash[:github] = social.attr("href")
+      else 
+        attributes_hash[:blog] = social.attr("href")
       end
     end
 # binding.pry
