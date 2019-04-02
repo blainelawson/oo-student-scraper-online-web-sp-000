@@ -27,9 +27,7 @@ class Scraper
 
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
-# binding.pry
     doc.css(".social-icon-container a").each do |social|
-      # binding.pry
       if social.attr("href").include?("twitter")
         attributes_hash[:twitter] = social.attr("href")
       elsif social.attr("href").include?("linkedin")
@@ -40,10 +38,8 @@ class Scraper
         attributes_hash[:blog] = social.attr("href")
       end
     end
-# binding.pry
   attributes_hash[:profile_quote] = doc.css(".profile-quote").text
   attributes_hash[:bio] = doc.css(".bio-content p").text
-  # binding.pry
 
   attributes_hash
   end # self.scrape_profile_page
