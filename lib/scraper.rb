@@ -16,6 +16,7 @@ class Scraper
                       location: student_card.css("p").text, #location
                            url: student_card.css("a").attr("href").value # student url
                     }
+      students_array << student_hash
                     binding.pry
     end
   end
