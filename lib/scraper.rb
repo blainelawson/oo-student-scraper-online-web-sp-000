@@ -19,6 +19,7 @@ class Scraper
       student_hash_array << student_hash
                     # binding.pry
     end
+    student_hash_array
   end
 
   def self.scrape_profile_page(profile_url)
