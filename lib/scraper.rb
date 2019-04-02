@@ -39,6 +39,8 @@ class Scraper
       end
     end
 binding.pry
+
+  attributes_hash[:bio] = doc.css(".description-holder p").text
   end # self.scrape_profile_page
 
 end
