@@ -13,7 +13,7 @@ class Scraper
       student_hash = {
                           name: student_card.css("h4").text #name
                       location: student_card.css("p").text #location
-                           url: student_card.css("a").attr("href").value # student url                    
+                           url: student_card.css("a").attr("href").value # student url
                     }
                     binding.pry
     end
